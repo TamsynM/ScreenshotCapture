@@ -1,0 +1,9 @@
+C:\Users\tamsy_000\Documents\Teboscreen_source_code\Teboscreen\bin\Release\Teboscreen.exe.config
+C:\Users\tamsy_000\Documents\Teboscreen_source_code\Teboscreen\bin\Release\Teboscreen.exe
+C:\Users\tamsy_000\Documents\Teboscreen_source_code\Teboscreen\bin\Release\Teboscreen.pdb
+C:\Users\tamsy_000\Documents\Teboscreen_source_code\Teboscreen\obj\Release\ScreenshotCapture.ControlPanel.resources
+C:\Users\tamsy_000\Documents\Teboscreen_source_code\Teboscreen\obj\Release\ScreenshotCapture.Form1.resources
+C:\Users\tamsy_000\Documents\Teboscreen_source_code\Teboscreen\obj\Release\ScreenshotCapture.Properties.Resources.resources
+C:\Users\tamsy_000\Documents\Teboscreen_source_code\Teboscreen\obj\Release\Teboscreen.csproj.GenerateResource.Cache
+C:\Users\tamsy_000\Documents\Teboscreen_source_code\Teboscreen\obj\Release\Teboscreen.exe
+C:\Users\tamsy_000\Documents\Teboscreen_source_code\Teboscreen\obj\Release\Teboscreen.pdb
