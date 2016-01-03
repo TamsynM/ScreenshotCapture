@@ -18,6 +18,8 @@ namespace ScreenshotCapture
         string version;
         string author;
         string date;
+        //public string savedetails;
+        string savefiledetails;
 
         private Form m_InstanceRef = null;
         public Form InstanceRef
@@ -42,6 +44,7 @@ namespace ScreenshotCapture
         {
 
             InitializeComponent();
+            
 
         }
 
@@ -50,6 +53,7 @@ namespace ScreenshotCapture
 
             InitializeComponent();
             this.FormClosed += new FormClosedEventHandler(Form_Close);
+
 
         }
 
@@ -85,13 +89,32 @@ namespace ScreenshotCapture
             Application.Exit();
 
         }
+        
+        //Recently Added
+        public string _saveFileDialog1
+        {
+        get { return _saveFileDialog1; }
+        }
 
         private void bttCaptureArea_Click(object sender, EventArgs e)
         {
-            
+            fileDetails();
+            projectNumber = Settings.Default.projectNumber;
+            projectName = Settings.Default.projectName;
+            fileName = Settings.Default.fileName;
+            version = Settings.Default.version;
+            author = Settings.Default.author;
+            DateTime mydate = DateTime.UtcNow;
+            date = mydate.ToString("yy-MM-dd");
+            //saveFileDialog1.FileName = date + "_" + projectNumber + "_" + projectName + "_" + fileName + "_" + version + "_" + author;
             this.Hide();
             Form1 form1 = new Form1();
             form1.InstanceRef = this;
+            //Recently Added line
+            //form1._saveFile = saveFileDialog1.ToString();
+            saveFileDialog1.DefaultExt = "png";
+            saveFileDialog1.FileName = date + "_" + projectNumber + "_" + projectName + "_" + fileName + "_" + version + "_" + author;
+            //savedetails = saveFileDialog1.FileName.ToString();
             //fileDetails();
             form1.Show();
             //projectNumber = Settings.Default.projectNumber;
@@ -102,13 +125,11 @@ namespace ScreenshotCapture
             //date = DateTime.Now.ToString("yymmd");
             //saveFileDialog1.FileName = date + "_" + projectNumber + "_" + projectName + "_" + fileName + "_" + version + "_" + author;
 
-            
-
-
         }
 
         public void screenCapture(bool showCursor)
         {
+            
             Point curPos = new Point(Cursor.Position.X, Cursor.Position.Y);
             Size curSize = new Size();
             curSize.Height = Cursor.Current.Size.Height;
@@ -135,6 +156,8 @@ namespace ScreenshotCapture
             {
                 fileDetails();
                 //Conceal this form while the screen capture takes place
+                saveFileDialog1.DefaultExt = "png";
+                saveFileDialog1.FileName = date + "_" + projectNumber + "_" + projectName + "_" + fileName + "_" + version + "_" + author;
                 this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
                 this.TopMost = false;
 
@@ -183,14 +206,21 @@ namespace ScreenshotCapture
 
         }
 
-        private void fileDetails()
+        //public void fileDetails()
+        public void fileDetails()
         {
             projectNumber = projNumTxtBox.Text;
             projectName = projNameTxtBox.Text;
             fileName = fileNameTxtBox.Text;
             version = versionTxtBox.Text;
             author = authorTxtBox.Text;
-            date = DateTime.Now.ToString("yymmd");
+            date = DateTime.Now.ToString("yyMMdd");
+        }
+
+        public string saveDetails()
+        {
+            savefiledetails = saveFileDialog1.FileName = date + "_" + projectNumber + "_" + projectName + "_" + fileName + "_" + version + "_" + author;
+            return savefiledetails;
         }
 
         private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
@@ -293,17 +323,19 @@ namespace ScreenshotCapture
 
         private void saveBtn_Click(object sender, EventArgs e)
         {
-            Settings.Default.projectNumber = this.projectNumber;
-            Settings.Default.projectName = this.projectName;
-            Settings.Default.fileName = this.fileName;
-            Settings.Default.version = this.version;
-            Settings.Default.author = this.author;
-            //Settings.Default.Save();
-            /*projNumTxtBox.Text = Settings.Default.projectNumber;
-            projNameTxtBox.Text = Settings.Default.projectName;
-            fileNameTxtBox.Text = Settings.Default.fileName;
-            versionTxtBox.Text = Settings.Default.version;
-            authorTxtBox.Text = Settings.Default.author;*/
+            /*
+                Settings.Default.projectNumber = this.projectNumber;
+                Settings.Default.projectName = this.projectName;
+                Settings.Default.fileName = this.fileName;
+                Settings.Default.version = this.version;
+                Settings.Default.author = this.author;*/
+            
+                projNumTxtBox.Text = Settings.Default.projectNumber;
+                projNameTxtBox.Text = Settings.Default.projectName;
+                fileNameTxtBox.Text = Settings.Default.fileName;
+                versionTxtBox.Text = Settings.Default.version;
+                authorTxtBox.Text = Settings.Default.author;
+                Settings.Default.Save();
         }
 
     }

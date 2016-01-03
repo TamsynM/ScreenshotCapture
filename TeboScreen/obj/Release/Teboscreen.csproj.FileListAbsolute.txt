@@ -7,3 +7,13 @@ C:\Users\tamsy_000\Documents\Teboscreen_source_code\Teboscreen\obj\Release\Scree
 C:\Users\tamsy_000\Documents\Teboscreen_source_code\Teboscreen\obj\Release\Teboscreen.csproj.GenerateResource.Cache
 C:\Users\tamsy_000\Documents\Teboscreen_source_code\Teboscreen\obj\Release\Teboscreen.exe
 C:\Users\tamsy_000\Documents\Teboscreen_source_code\Teboscreen\obj\Release\Teboscreen.pdb
+E:\Documents\ScreenshotCapture\Teboscreen\bin\Release\Teboscreen.exe.config
+E:\Documents\ScreenshotCapture\Teboscreen\bin\Release\Teboscreen.exe
+E:\Documents\ScreenshotCapture\Teboscreen\bin\Release\Teboscreen.pdb
+E:\Documents\ScreenshotCapture\Teboscreen\obj\Release\Teboscreen.csprojResolveAssemblyReference.cache
+E:\Documents\ScreenshotCapture\Teboscreen\obj\Release\ScreenshotCapture.ControlPanel.resources
+E:\Documents\ScreenshotCapture\Teboscreen\obj\Release\ScreenshotCapture.Form1.resources
+E:\Documents\ScreenshotCapture\Teboscreen\obj\Release\ScreenshotCapture.Properties.Resources.resources
+E:\Documents\ScreenshotCapture\Teboscreen\obj\Release\Teboscreen.csproj.GenerateResource.Cache
+E:\Documents\ScreenshotCapture\Teboscreen\obj\Release\Teboscreen.exe
+E:\Documents\ScreenshotCapture\Teboscreen\obj\Release\Teboscreen.pdb

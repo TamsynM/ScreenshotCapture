@@ -11,6 +11,13 @@ namespace ScreenshotCapture
     public partial class Form1 : Form
     {
         #region:::::::::::::::::::::::::::::::::::::::::::Form level declarations:::::::::::::::::::::::::::::::::::::::::::
+        private readonly ControlPanel _controlpanel;
+
+        public Form1 (ControlPanel controlpanel )
+        {
+            InitializeComponent();
+            this._controlpanel = controlpanel;
+        }
 
         public enum CursPos : int
         {
@@ -27,6 +34,12 @@ namespace ScreenshotCapture
             BottomRight
 
         }
+
+        //Recently added
+        //public string _saveFile
+       // {
+        //set { saveFileDialog1.FileName = value; }
+       // }
 
         public enum ClickAction : int
         {
@@ -80,6 +93,8 @@ namespace ScreenshotCapture
         }
 
         private Form m_InstanceRef = null;
+        private object saveDetails;
+
         public Form InstanceRef
         {
             get
@@ -111,6 +126,11 @@ namespace ScreenshotCapture
             g = this.CreateGraphics();
 
         }
+
+        public Form1(object saveDetails)
+        {
+            this.saveDetails = saveDetails;
+        }
         #endregion
 
 
@@ -127,9 +147,9 @@ namespace ScreenshotCapture
 
             if (!ScreenShot.saveToClipboard)
             {
-
-                saveFileDialog1.DefaultExt = "bmp";
-                saveFileDialog1.Filter = "bmp files (*.bmp)|*.bmp|jpg files (*.jpg)|*.jpg|gif files (*.gif)|*.gif|tiff files (*.tiff)|*.tiff|png files (*.png)|*.png";
+                saveFileDialog1.FileName = this._controlpanel.saveDetails();
+                saveFileDialog1.DefaultExt = "png";
+                saveFileDialog1.Filter = "png files (*.png)|*.png|bmp files (*.bmp)|*.bmp|jpg files (*.jpg)|*.jpg|gif files (*.gif)|*.gif|tiff files (*.tiff)|*.tiff";
                 saveFileDialog1.Title = "Save screenshot to...";
                 saveFileDialog1.ShowDialog();
                 ScreenPath = saveFileDialog1.FileName;
@@ -166,7 +186,7 @@ namespace ScreenshotCapture
                 else
                 {
 
-                    MessageBox.Show("Area saved to file", "TeboScreen", MessageBoxButtons.OK);
+                    MessageBox.Show("Area saved to file", "Screenshot", MessageBoxButtons.OK);
 
                 }
 
@@ -179,7 +199,7 @@ namespace ScreenshotCapture
             else
             {
 
-                MessageBox.Show("File save cancelled", "TeboScreen", MessageBoxButtons.OK);
+                MessageBox.Show("File save cancelled", "Screenshot", MessageBoxButtons.OK);
                 this.InstanceRef.Show();
                 this.Close();
 
