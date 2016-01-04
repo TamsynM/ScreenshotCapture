@@ -13,10 +13,11 @@ namespace ScreenshotCapture
         #region:::::::::::::::::::::::::::::::::::::::::::Form level declarations:::::::::::::::::::::::::::::::::::::::::::
         private readonly ControlPanel _controlpanel;
 
-        public Form1 (ControlPanel controlpanel )
+        public Form1 (ControlPanel controlpanel)
         {
             InitializeComponent();
             this._controlpanel = controlpanel;
+            //saveFileDialog1.FileName = saveFileName;
         }
 
         public enum CursPos : int
@@ -37,9 +38,9 @@ namespace ScreenshotCapture
 
         //Recently added
         //public string _saveFile
-       // {
+        //{
         //set { saveFileDialog1.FileName = value; }
-       // }
+        //}
 
         public enum ClickAction : int
         {
@@ -93,7 +94,8 @@ namespace ScreenshotCapture
         }
 
         private Form m_InstanceRef = null;
-        private object saveDetails;
+        //private object saveDetails;
+        //private readonly object ControlPanel;
 
         public Form InstanceRef
         {
@@ -127,10 +129,10 @@ namespace ScreenshotCapture
 
         }
 
-        public Form1(object saveDetails)
-        {
-            this.saveDetails = saveDetails;
-        }
+        //public Form1(object saveDetails)
+        //{
+            //this.saveDetails = saveDetails;
+       // }
         #endregion
 
 
@@ -147,7 +149,8 @@ namespace ScreenshotCapture
 
             if (!ScreenShot.saveToClipboard)
             {
-                saveFileDialog1.FileName = this._controlpanel.saveDetails();
+                //saveFileDialog1.FileName = this._controlpanel.saveDetails();
+                saveFileDialog1.FileName = ControlPanel.saveFileName;
                 saveFileDialog1.DefaultExt = "png";
                 saveFileDialog1.Filter = "png files (*.png)|*.png|bmp files (*.bmp)|*.bmp|jpg files (*.jpg)|*.jpg|gif files (*.gif)|*.gif|tiff files (*.tiff)|*.tiff";
                 saveFileDialog1.Title = "Save screenshot to...";

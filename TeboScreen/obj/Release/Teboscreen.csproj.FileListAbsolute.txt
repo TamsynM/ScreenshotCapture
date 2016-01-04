@@ -17,3 +17,7 @@ E:\Documents\ScreenshotCapture\Teboscreen\obj\Release\ScreenshotCapture.Properti
 E:\Documents\ScreenshotCapture\Teboscreen\obj\Release\Teboscreen.csproj.GenerateResource.Cache
 E:\Documents\ScreenshotCapture\Teboscreen\obj\Release\Teboscreen.exe
 E:\Documents\ScreenshotCapture\Teboscreen\obj\Release\Teboscreen.pdb
+E:\Documents\ScreenshotCapture\Teboscreen\bin\Release\Teboscreen.exe.manifest
+E:\Documents\ScreenshotCapture\Teboscreen\bin\Release\Teboscreen.application
+E:\Documents\ScreenshotCapture\Teboscreen\obj\Release\Teboscreen.exe.manifest
+E:\Documents\ScreenshotCapture\Teboscreen\obj\Release\Teboscreen.application

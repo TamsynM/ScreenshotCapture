@@ -18,8 +18,9 @@ namespace ScreenshotCapture
         string version;
         string author;
         string date;
-        //public string savedetails;
+        public string savedetails;
         string savefiledetails;
+        public static string saveFileName;
 
         private Form m_InstanceRef = null;
         public Form InstanceRef
@@ -91,11 +92,22 @@ namespace ScreenshotCapture
         }
         
         //Recently Added
-        public string _saveFileDialog1
-        {
-        get { return _saveFileDialog1; }
-        }
+       // public string _saveFileDialog1
+        //{
+            //get 
+            //{ 
+             //   return _saveFileDialog1; 
+           // }
+       // }
 
+        //Recently Added2
+       // public string _saveFile
+       // {
+          //  get
+          //  {
+              //  return saveFileDialog1.FileName.ToString();
+          //  }
+       // }
         private void bttCaptureArea_Click(object sender, EventArgs e)
         {
             fileDetails();
@@ -105,13 +117,16 @@ namespace ScreenshotCapture
             version = Settings.Default.version;
             author = Settings.Default.author;
             DateTime mydate = DateTime.UtcNow;
-            date = mydate.ToString("yy-MM-dd");
+            date = mydate.ToString("yyMMdd");
+            saveFileDialog1.FileName = date + "_" + projectNumber + "_" + projectName + "_" + fileName + "_" + version + "_" + author;
+            FileInfo f = new FileInfo(saveFileDialog1.FileName);
+            saveFileName = f.Name;
             //saveFileDialog1.FileName = date + "_" + projectNumber + "_" + projectName + "_" + fileName + "_" + version + "_" + author;
             this.Hide();
             Form1 form1 = new Form1();
             form1.InstanceRef = this;
             //Recently Added line
-            //form1._saveFile = saveFileDialog1.ToString();
+            //form1._saveFile = saveFileDialog1.FileName.ToString();
             saveFileDialog1.DefaultExt = "png";
             saveFileDialog1.FileName = date + "_" + projectNumber + "_" + projectName + "_" + fileName + "_" + version + "_" + author;
             //savedetails = saveFileDialog1.FileName.ToString();
@@ -205,8 +220,7 @@ namespace ScreenshotCapture
             screenCapture(false);
 
         }
-
-        //public void fileDetails()
+   
         public void fileDetails()
         {
             projectNumber = projNumTxtBox.Text;
@@ -219,7 +233,7 @@ namespace ScreenshotCapture
 
         public string saveDetails()
         {
-            savefiledetails = saveFileDialog1.FileName = date + "_" + projectNumber + "_" + projectName + "_" + fileName + "_" + version + "_" + author;
+            savefiledetails = saveFileDialog1.FileName.ToString();
             return savefiledetails;
         }
 
