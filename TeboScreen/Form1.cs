@@ -36,12 +36,6 @@ namespace ScreenshotCapture
 
         }
 
-        //Recently added
-        //public string _saveFile
-        //{
-        //set { saveFileDialog1.FileName = value; }
-        //}
-
         public enum ClickAction : int
         {
 
@@ -75,7 +69,7 @@ namespace ScreenshotCapture
 
         Graphics g;
         Pen MyPen = new Pen(Color.Black, 1);
-        SolidBrush TransparentBrush = new SolidBrush(Color.White);
+        SolidBrush TransparentBrush = new SolidBrush(Color.Black); //was white
         Pen EraserPen = new Pen(Color.FromArgb(255, 255, 192), 1);
         SolidBrush eraserBrush = new SolidBrush(Color.FromArgb(255, 255, 192));
 
@@ -94,8 +88,6 @@ namespace ScreenshotCapture
         }
 
         private Form m_InstanceRef = null;
-        //private object saveDetails;
-        //private readonly object ControlPanel;
 
         public Form InstanceRef
         {
@@ -129,10 +121,6 @@ namespace ScreenshotCapture
 
         }
 
-        //public Form1(object saveDetails)
-        //{
-            //this.saveDetails = saveDetails;
-       // }
         #endregion
 
 
@@ -149,7 +137,6 @@ namespace ScreenshotCapture
 
             if (!ScreenShot.saveToClipboard)
             {
-                //saveFileDialog1.FileName = this._controlpanel.saveDetails();
                 saveFileDialog1.FileName = ControlPanel.saveFileName;
                 saveFileDialog1.DefaultExt = "png";
                 saveFileDialog1.Filter = "png files (*.png)|*.png|bmp files (*.bmp)|*.bmp|jpg files (*.jpg)|*.jpg|gif files (*.gif)|*.gif|tiff files (*.tiff)|*.tiff";
@@ -183,13 +170,13 @@ namespace ScreenshotCapture
                 if (ScreenShot.saveToClipboard)
                 {
 
-                    MessageBox.Show("Area saved to clipboard", "TeboScreen", MessageBoxButtons.OK);
+                    MessageBox.Show("Area saved to clipboard", "ScreenCapture", MessageBoxButtons.OK);
 
                 }
                 else
                 {
 
-                    MessageBox.Show("Area saved to file", "Screenshot", MessageBoxButtons.OK);
+                    MessageBox.Show("Area saved to file", "ScreenCapture", MessageBoxButtons.OK);
 
                 }
 
@@ -202,7 +189,7 @@ namespace ScreenshotCapture
             else
             {
 
-                MessageBox.Show("File save cancelled", "Screenshot", MessageBoxButtons.OK);
+                MessageBox.Show("File save cancelled", "ScreenCapture", MessageBoxButtons.OK);
                 this.InstanceRef.Show();
                 this.Close();
 

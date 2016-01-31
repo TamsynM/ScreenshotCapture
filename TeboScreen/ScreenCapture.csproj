@@ -9,7 +9,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ScreenshotCapture</RootNamespace>
-    <AssemblyName>Teboscreen</AssemblyName>
+    <AssemblyName>ScreenCapture</AssemblyName>
     <StartupObject>
     </StartupObject>
     <IsWebBootstrapper>false</IsWebBootstrapper>
@@ -64,6 +64,9 @@
   <PropertyGroup>
     <SignManifests>true</SignManifests>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Dakirby309-Windows-8-Metro-Apps-Screenshot-Metro.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -117,7 +120,7 @@
     </Compile>
     <Compile Include="ScreenShot.cs" />
     <Compile Include="Settings.cs" />
-    <None Include="Teboscreen_TemporaryKey.pfx" />
+    <None Include="ScreenCapture_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
@@ -135,6 +138,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dakirby309-Windows-8-Metro-Apps-Screenshot-Metro.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,0 +1,14 @@
+C:\Users\tamsy_000\Documents\ScreenshotCapture\Teboscreen\bin\Release\ScreenCapture.exe.config
+C:\Users\tamsy_000\Documents\ScreenshotCapture\Teboscreen\bin\Release\ScreenCapture.exe.manifest
+C:\Users\tamsy_000\Documents\ScreenshotCapture\Teboscreen\bin\Release\ScreenCapture.application
+C:\Users\tamsy_000\Documents\ScreenshotCapture\Teboscreen\bin\Release\ScreenCapture.exe
+C:\Users\tamsy_000\Documents\ScreenshotCapture\Teboscreen\bin\Release\ScreenCapture.pdb
+C:\Users\tamsy_000\Documents\ScreenshotCapture\Teboscreen\obj\Release\ScreenshotCapture.ControlPanel.resources
+C:\Users\tamsy_000\Documents\ScreenshotCapture\Teboscreen\obj\Release\ScreenshotCapture.Form1.resources
+C:\Users\tamsy_000\Documents\ScreenshotCapture\Teboscreen\obj\Release\ScreenshotCapture.Properties.Resources.resources
+C:\Users\tamsy_000\Documents\ScreenshotCapture\Teboscreen\obj\Release\ScreenCapture.csproj.GenerateResource.Cache
+C:\Users\tamsy_000\Documents\ScreenshotCapture\Teboscreen\obj\Release\ScreenCapture.exe.manifest
+C:\Users\tamsy_000\Documents\ScreenshotCapture\Teboscreen\obj\Release\ScreenCapture.application
+C:\Users\tamsy_000\Documents\ScreenshotCapture\Teboscreen\obj\Release\ScreenCapture.exe
+C:\Users\tamsy_000\Documents\ScreenshotCapture\Teboscreen\obj\Release\ScreenCapture.pdb
+C:\Users\tamsy_000\Documents\ScreenshotCapture\Teboscreen\obj\Release\ScreenCapture.csprojResolveAssemblyReference.cache
