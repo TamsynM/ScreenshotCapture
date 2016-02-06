@@ -1,0 +1,14 @@
+D:\Documents\GitHub\ScreenshotCapture\ScreenCapture\bin\Release\ScreenCapture.exe.config
+D:\Documents\GitHub\ScreenshotCapture\ScreenCapture\bin\Release\ScreenCapture.exe.manifest
+D:\Documents\GitHub\ScreenshotCapture\ScreenCapture\bin\Release\ScreenCapture.application
+D:\Documents\GitHub\ScreenshotCapture\ScreenCapture\bin\Release\ScreenCapture.exe
+D:\Documents\GitHub\ScreenshotCapture\ScreenCapture\bin\Release\ScreenCapture.pdb
+D:\Documents\GitHub\ScreenshotCapture\ScreenCapture\obj\Release\ScreenCapture.csprojResolveAssemblyReference.cache
+D:\Documents\GitHub\ScreenshotCapture\ScreenCapture\obj\Release\ScreenshotCapture.ControlPanel.resources
+D:\Documents\GitHub\ScreenshotCapture\ScreenCapture\obj\Release\ScreenshotCapture.Form1.resources
+D:\Documents\GitHub\ScreenshotCapture\ScreenCapture\obj\Release\ScreenshotCapture.Properties.Resources.resources
+D:\Documents\GitHub\ScreenshotCapture\ScreenCapture\obj\Release\ScreenCapture.csproj.GenerateResource.Cache
+D:\Documents\GitHub\ScreenshotCapture\ScreenCapture\obj\Release\ScreenCapture.exe.manifest
+D:\Documents\GitHub\ScreenshotCapture\ScreenCapture\obj\Release\ScreenCapture.application
+D:\Documents\GitHub\ScreenshotCapture\ScreenCapture\obj\Release\ScreenCapture.exe
+D:\Documents\GitHub\ScreenshotCapture\ScreenCapture\obj\Release\ScreenCapture.pdb
