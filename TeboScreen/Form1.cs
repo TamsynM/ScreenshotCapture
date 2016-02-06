@@ -142,7 +142,17 @@ namespace ScreenshotCapture
                 saveFileDialog1.Filter = "png files (*.png)|*.png|bmp files (*.bmp)|*.bmp|jpg files (*.jpg)|*.jpg|gif files (*.gif)|*.gif|tiff files (*.tiff)|*.tiff";
                 saveFileDialog1.Title = "Save screenshot to...";
                 saveFileDialog1.ShowDialog();
-                ScreenPath = saveFileDialog1.FileName;
+
+                if (DialogResult == DialogResult.OK)
+                { 
+                    ScreenPath = saveFileDialog1.FileName;
+                }
+
+                else if (DialogResult == DialogResult.Cancel)
+                {
+                    ScreenPath = "";
+                }
+
 
             }
 
