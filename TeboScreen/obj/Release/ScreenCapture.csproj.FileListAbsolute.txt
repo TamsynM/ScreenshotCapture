@@ -12,3 +12,17 @@ C:\Users\tamsy_000\Documents\ScreenshotCapture\Teboscreen\obj\Release\ScreenCapt
 C:\Users\tamsy_000\Documents\ScreenshotCapture\Teboscreen\obj\Release\ScreenCapture.exe
 C:\Users\tamsy_000\Documents\ScreenshotCapture\Teboscreen\obj\Release\ScreenCapture.pdb
 C:\Users\tamsy_000\Documents\ScreenshotCapture\Teboscreen\obj\Release\ScreenCapture.csprojResolveAssemblyReference.cache
+D:\Documents\GitHub\ScreenshotCapture\Teboscreen\bin\Release\ScreenCapture.exe.config
+D:\Documents\GitHub\ScreenshotCapture\Teboscreen\obj\Release\ScreenCapture.exe
+D:\Documents\GitHub\ScreenshotCapture\Teboscreen\obj\Release\ScreenCapture.pdb
+D:\Documents\GitHub\ScreenshotCapture\Teboscreen\bin\Release\ScreenCapture.exe.manifest
+D:\Documents\GitHub\ScreenshotCapture\Teboscreen\bin\Release\ScreenCapture.application
+D:\Documents\GitHub\ScreenshotCapture\Teboscreen\bin\Release\ScreenCapture.exe
+D:\Documents\GitHub\ScreenshotCapture\Teboscreen\bin\Release\ScreenCapture.pdb
+D:\Documents\GitHub\ScreenshotCapture\Teboscreen\obj\Release\ScreenCapture.csprojResolveAssemblyReference.cache
+D:\Documents\GitHub\ScreenshotCapture\Teboscreen\obj\Release\ScreenshotCapture.ControlPanel.resources
+D:\Documents\GitHub\ScreenshotCapture\Teboscreen\obj\Release\ScreenshotCapture.Form1.resources
+D:\Documents\GitHub\ScreenshotCapture\Teboscreen\obj\Release\ScreenshotCapture.Properties.Resources.resources
+D:\Documents\GitHub\ScreenshotCapture\Teboscreen\obj\Release\ScreenCapture.csproj.GenerateResource.Cache
+D:\Documents\GitHub\ScreenshotCapture\Teboscreen\obj\Release\ScreenCapture.exe.manifest
+D:\Documents\GitHub\ScreenshotCapture\Teboscreen\obj\Release\ScreenCapture.application
